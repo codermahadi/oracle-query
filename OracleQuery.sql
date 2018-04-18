@@ -42,3 +42,6 @@ ALTER TABLE customers
   customer_name VARCHAR2(100),
   customer_type VARCHAR2(250)
   );
+
+ALTER TABLE customers
+  DROP COLUMN customer_type;
