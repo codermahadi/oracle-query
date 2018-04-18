@@ -47,3 +47,5 @@ ALTER TABLE customers
   DROP COLUMN customer_type;
 
 ALTER TABLE customers RENAME COLUMN customer_name To cname;
+
+ALTER TABLE irregularcustomers RENAME TO ircustomers;
