@@ -29,3 +29,9 @@ CREATE TABLE customers3 AS(
 );
 
 ALTER TABLE customers ADD customer_age VARCHAR2(50);
+
+ALTER TABLE customers
+ADD (
+  customer_type varchar2(50),
+  customer_address varchar2(50)
+);
