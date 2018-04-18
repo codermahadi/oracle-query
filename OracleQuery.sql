@@ -27,3 +27,5 @@ CREATE TABLE customers3 AS(
       FROM irregularcustomers,regularcustomers
   WHERE regularcustomers.IRCUSTOMER_ID = irregularcustomers.RCUSTOMER_ID
 );
+
+ALTER TABLE customers ADD customer_age VARCHAR2(50);
