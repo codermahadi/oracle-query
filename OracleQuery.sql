@@ -35,3 +35,10 @@ ADD (
   customer_type varchar2(50),
   customer_address varchar2(50)
 );
+
+
+ALTER TABLE customers
+  MODIFY (
+  customer_name VARCHAR2(100),
+  customer_type VARCHAR2(250)
+  );
