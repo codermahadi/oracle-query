@@ -5,3 +5,5 @@ CREATE TABLE customers
   city VARCHAR2(50),
   CONSTRAINT customers_pk PRIMARY KEY (customer_id)
 );
+
+CREATE TABLE newCustomers AS(SELECT * FROM customers WHERE customer_id <2);
