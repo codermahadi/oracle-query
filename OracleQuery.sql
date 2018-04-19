@@ -53,3 +53,27 @@ ALTER TABLE customers
 ALTER TABLE customers RENAME COLUMN customer_name To cname;
 
 ALTER TABLE irregularcustomers RENAME TO ircustomers;
+
+
+CREATE TABLE SUPPLIERS
+(
+  supplir_id NUMBER(1,10),
+  supplir_name VARCHAR2(100),
+  supplir_add VARCHAR2(150)
+);
+
+CREATE TABLE ORDERS
+(
+  order_no NUMBER,
+  order_price NUMBER,
+  order_qty NUMBER
+);
+
+CREATE VIEW sup_order AS
+  SELECT SUPPLIERS.supplir_id,ORDERS.order_qty,ORDERS.order_price
+    FROM SUPPLIERS
+    INNER JOIN ORDERS
+      ON SUPPLIERS.supplir_id = supplir_id
+  WHERE supplir_name = 'mahadi';
+
+SELECT * FROM sup_order;
