@@ -36,6 +36,10 @@ ADD (
   customer_address varchar2(50)
 );
 
+DROP TABLE irregularcustomers;
+DROP TABLE NEWCUSTOMERS;
+DROP TABLE IRCUSTOMERS PURGE;
+
 
 ALTER TABLE customers
   MODIFY (
